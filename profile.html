@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="background">
+    <div class="container">
+      <div class="row-wise">
+        <img src="./Lawrence 19.jpg" class="profile-image">
+       <div class="bottom">
+        <h1 class="heading">  Lawrence manu</h1>
+         <div class="sub">
+        <h2 class="sub1">im a <span id="words" style ="color:green"><br>web devolper</span></h2>
+       
+        <p class="paragraph">I am a fellow student in college of engineering chenganuur. <br> I am currently studenting about web devolpement. </p>
+        <a href="https://instagram.com/lorentz__07?igshid=M2RkZGJiMzhjOQ==">
+          <button class="button">contact</button>
+        </a>
+         </div>
+
+       </div>
+        
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        var words = ["Ui/UX Designer","Developer","tech enthusisast"],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(0,function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 3000)
+      })();
+    </script>
+</body>
+</html>
